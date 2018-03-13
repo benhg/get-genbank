@@ -1,6 +1,8 @@
 import os
 import subprocess
 import time
+
+os.popen("get_blast.pl --passive --showall > genbank_list.txt")
 databases_list = open("genbank_list.txt").readlines()
 
 for database in databases_list:
